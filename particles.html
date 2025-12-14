@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Hand-Tracked 3D Particles</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loading">Loading AI Models...</div>
+
+    <div id="ui">
+      <h1>Particle Shaper</h1>
+      <p>🖐 <b>Open Hand:</b> Switch Shape</p>
+      <p>🤏 <b>Pinch:</b> Expand/Contract</p>
+      <p>↔ <b>Move Hand:</b> Rotate & Color</p>
+      <p>
+        Current Shape: <span id="shape-name" class="highlight">Sphere</span>
+      </p>
+    </div>
+
+    <div id="video-container">
+      <video id="input_video" autoplay playsinline webkit-playsinline></video>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
